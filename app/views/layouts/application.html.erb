@@ -7,6 +7,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <!--This document is in html.. the .erb extension allows us to add Ruby code like in line 21-->
 <nav class="navbar navbar-default navbar-static-top" role="navigation">
   <div class='container'>
     <div class="navbar-header">
@@ -16,11 +17,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <%= link_to 'SaaS', root_path, class: 'navbar-brand' %>
+      <!--This "link_to" converts into an anchor tag, like a html code, but its in Ruby. in the inspect element in the browser it doesnt show as ruby code, it converts to html. -->
+      <%= link_to 'Site Name (SAAS)', root_path, class: 'navbar-brand' %>
     </div>
     <div class="collapse navbar-collapse" id="main-nav-collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "About", "#" %></li>
+        <li><%= link_to "About", about_path %></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div>
