@@ -22,12 +22,15 @@
     </div>
     <div class="collapse navbar-collapse" id="main-nav-collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "About", about_path %></li>
+        <li><%= link_to "About",  about_path %></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div>
 </nav>
-<%= yield %>
-
+  <div class ="container">
+    <!-- the following just shows whatever is on the page selected, like if your on the home page it will be replaced by whatever is in the home html -->
+    <%= yield %>
+  </div>
+    
 </body>
 </html>
