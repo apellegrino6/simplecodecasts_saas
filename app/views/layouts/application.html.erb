@@ -32,6 +32,9 @@
   </div>
 </nav>
   <div class ="container">
+    <% flash.each do |key, value| %>
+    <%= content_tag :div, value, class: "alert-#{key}" %>
+    <% end %>
     <!-- the following just shows whatever is on the page selected, like if your on the home page it will be replaced by whatever is in the home html -->
     <%= yield %>
   </div>
