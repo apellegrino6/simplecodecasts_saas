@@ -1,9 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users, controllers: { registrations: 'users/registrations'}
-<<<<<<< HEAD
   # nested resources so that every user has a profile
-=======
->>>>>>> e378dd9f9195615e28cd6af95de60e135bb4219d
   resources :users do
     resource :profile
   end
