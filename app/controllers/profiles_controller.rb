@@ -1,5 +1,5 @@
 class ProfilesController < ApplicationController
   
   
-  
+
 end
